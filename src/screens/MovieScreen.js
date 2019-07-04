@@ -14,16 +14,12 @@ import * as APIS from "../constants/APIS";
 import { API_KEY } from "../constants/Constants";
 import SectionItem from "../components/SectionItem";
 // import sectionData from "../constants/SectionData";
-// import slowlog from "react-native-slowlog";
 
 const { width, height } = Dimensions.get("window");
 
 export default class MovieScreen extends Component {
   constructor(props) {
     super(props);
-
-    slowlog(this, /.*/);
-
     this.params = props.navigation.state.params;
 
     const {
